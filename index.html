@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="date"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>hMTL5 FORMS</h1>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List with Roman Numerals</h2>
+    <ol type="I">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <li>Item Five</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>Image</h2>
+    <img class="styled-image"  src="../../Downloads/caleb.jpg" alt="landsscape "width="600">
+
+    <!-- Table of 5 Contacts -->
+    <h2>Contact List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>mercy wanjiku</td>
+                <td>123 Main St, Cityville</td>
+                <td>(123) 456-7890</td>
+                <td>mercywanjiku@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Jane karani</td>
+                <td>456 Oak Rd, Eldoret</td>
+                <td>(254) 754-3210</td>
+                <td>janekarani@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Michael kevin</td>
+                <td>789 Nairobi, Village</td>
+                <td>(254) 723-4567</td>
+                <td>michaelk@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Emily kombo</td>
+                <td>321 st.John, Kitale</td>
+                <td>(754) 567-8901</td>
+                <td>emilyk@gmail.com</td>
+            </tr>
+            <tr>
+                <td>James Lee</td>
+                <td>654 nakuru St, peters</td>
+                <td>(333) 789-0123</td>
+                <td>jameslee@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+
+        <label for="interests">Interests:</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="travel" name="interests" value="travel">
+        <label for="travel">Travel</label>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="kenya">Kenya</option>
+            <option value="uk">United Kingdom</option>
+            <option value="india">India</option>
+            <option value="canada">Canada</option>
+            <option value="usa">usa</option>
+        </select>
+
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
